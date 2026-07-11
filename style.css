@@ -187,6 +187,7 @@ width:220px;
     font-size:18px;
     font-weight:bold;
     transition:0.3s;
+    margin-right:20px;
 }
 
 .social-links a:hover{
