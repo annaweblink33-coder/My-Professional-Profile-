@@ -232,3 +232,28 @@ font-size:36px;
 }
 
 }
+.project-card{
+    transition: 0.3s ease;
+}
+
+.project-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card{
+    transition: 0.3s ease;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.skill{
+    transition: 0.3s;
+}
+
+.skill:hover{
+    transform: scale(1.1);
+}
