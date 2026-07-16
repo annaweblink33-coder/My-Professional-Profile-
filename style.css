@@ -257,3 +257,22 @@ font-size:36px;
 .skill:hover{
     transform: scale(1.1);
 }
+/* Dark Mode */
+.dark-mode{
+    background:#121212;
+    color:#ffffff;
+}
+
+.dark-mode nav{
+    background:#000;
+}
+
+.dark-mode .card,
+.dark-mode .project-card{
+    background:#1e1e1e;
+    color:#ffffff;
+}
+
+.dark-mode a{
+    color:#4da3ff;
+        }
