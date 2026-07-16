@@ -17,3 +17,14 @@ document.querySelectorAll('nav a').forEach(link => {
 window.onload = function () {
   console.log("Welcome to Anna Megh Portfolio");
 };
+const btn = document.getElementById("theme-toggle");
+
+btn.onclick = function () {
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+        btn.innerHTML = "☀️ Light";
+    } else {
+        btn.innerHTML = "🌙";
+    }
+};
