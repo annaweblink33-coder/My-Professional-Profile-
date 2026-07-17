@@ -173,8 +173,8 @@ flex-direction:column;
   }
 
 #home{
-flex-direction:column;
-text-align:center;
+flex-direction:row;
+text-align:left;
 }
 
 .social-links{
