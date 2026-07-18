@@ -25,19 +25,20 @@ emailjs.sendForm(
   e.target,
   "znmc9bIj26Bix8CMC"
 )
-
 document.getElementById("contact-form").addEventListener("submit", function(e) {
     e.preventDefault();
-  e.target
-).then(
-  function () {
-    alert("Message Sent Successfully!");
-  },
-  function (error) {
-    alert(error.text);
-    console.log(error);
-  }
-);
+
+    emailjs.sendForm(
+        "service_mwzqwnx",
+        "template_8hmcm6l",
+        this,
+        "znmc9bIj26Bix8CMC"
+    ).then(function() {
+        alert("Message Sent Successfully!");
+    }, function(error) {
+        alert(error.text);
+        console.log(error);
+    });
 });
 
 const btn = document.getElementById("theme-toggle");
