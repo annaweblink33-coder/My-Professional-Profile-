@@ -25,7 +25,7 @@ document.getElementById("contact-form").addEventListener("submit", function(e) {
 emailjs.sendForm(
   "service_mwzqwnx",
   "template_8hmcm6l",
-  this
+  e.target
 ).then(
   function () {
     alert("Message Sent Successfully!");
