@@ -37,8 +37,8 @@ document.getElementById("contact-form").addEventListener("submit", function (e) 
     document.getElementById("contact-form").reset();
   })
   .catch(function (error) {
-  alert(JSON.stringify(error));
   console.log(error);
+  alert(JSON.stringify(error));
 });
 });
 
