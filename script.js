@@ -17,6 +17,24 @@ document.querySelectorAll('nav a').forEach(link => {
 window.onload = function () {
   console.log("Welcome to Anna Megh Portfolio");
 };
+// Initialize EmailJS
+emailjs.init("znmc9blj26Bix8CMC");
+
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      "service_mwzqwnx",
+      "template_8hmcm6l",
+        this
+    ).then(function() {
+        alert("Message sent successfully!");
+    }, function(error) {
+        alert("Failed to send message.");
+        console.log(error);
+    });
+});
+
 const btn = document.getElementById("theme-toggle");
 
 btn.onclick = function () {
