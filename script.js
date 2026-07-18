@@ -18,7 +18,7 @@ window.onload = function () {
   console.log("Welcome to Anna Megh Portfolio");
 };
 // Initialize EmailJS
-emailjs.init("znmc9blj26Bix8CMC");
+emailjs.init("znmc9bJi26Bix8CMC");
 
 document.getElementById("contact-form").addEventListener("submit", function(e) {
     e.preventDefault();
