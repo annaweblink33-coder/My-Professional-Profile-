@@ -164,23 +164,20 @@ I am looking for opportunities in Web Development, IT Support and Software Devel
 </section>
 
 <!-- Contact -->
-
 <section id="contact">
 
 <h2>Contact Me</h2>
 
-<form>
+  <form id="contact-form">
+<input type="text" name="name" placeholder="Your Name" required>
+<br>
+  <input type="email" name="email" placeholder="Your Email" required>
+<br>
 
-<input type="text" placeholder="Your Name" required>
-  
 <br>
-<input type="email" placeholder="Your Email" required>
-  
-<br>
-<textarea rows="6" placeholder="Your Message"></textarea>
-  
+    <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
   <br>
-
+    
 <button type="submit">
 Send Message
 </button>
@@ -200,6 +197,26 @@ Send Message
 </p>
 
 </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script>
+emailjs.init("znmc9blj26Bix8CMC");
+
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm(
+        "service_cmgii8m",
+        "template_8hmcm6l",
+        this
+    ).then(function() {
+        alert("Message Sent Successfully!");
+    }, function(error) {
+        alert("Failed to send message.");
+        console.log(error);
+    });
+});
+</script>
 
 <script src="script.js"></script>
 
