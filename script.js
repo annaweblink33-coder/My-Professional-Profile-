@@ -19,12 +19,15 @@ window.onload = function () {
 };
 // Initialize EmailJS
 emailjs.init("znmc9bJi26Bix8CMC");
-
-document.getElementById("contact-form").addEventListener("submit", function(e) {
-    e.preventDefault();
 emailjs.sendForm(
   "service_mwzqwnx",
   "template_8hmcm6l",
+  e.target,
+  "znmc9bIj26Bix8CMC"
+)
+
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
   e.target
 ).then(
   function () {
