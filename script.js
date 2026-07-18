@@ -41,7 +41,13 @@ document.getElementById("contact-form").addEventListener("submit", function (e) 
   alert(JSON.stringify(error));
 });
 });
-
+// 👇 Iske neeche add karo
+const now = new Date();
+document.getElementById("time").value =
+  now.toLocaleTimeString([], {
+    hour: "2-digit",
+    minute: "2-digit"
+  });
 // Dark Mode Toggle
 const btn = document.getElementById("theme-toggle");
 
