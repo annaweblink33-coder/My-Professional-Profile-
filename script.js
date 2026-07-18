@@ -37,9 +37,9 @@ document.getElementById("contact-form").addEventListener("submit", function (e) 
     document.getElementById("contact-form").reset();
   })
   .catch(function (error) {
-    alert("Failed to send message.");
-    console.log(error);
-  });
+  alert(JSON.stringify(error));
+  console.log(error);
+});
 });
 
 // Dark Mode Toggle
