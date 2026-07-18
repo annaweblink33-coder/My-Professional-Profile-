@@ -42,6 +42,7 @@ document.getElementById("contact-form").addEventListener("submit", function (e) 
 });
 });
 // 👇 Iske neeche add karo
+window.onload = function () {
 const now = new Date();
 document.getElementById("time").value =
   now.toLocaleTimeString([], {
@@ -62,3 +63,4 @@ if (btn) {
     }
   };
 }
+};
