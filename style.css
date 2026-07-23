@@ -365,3 +365,15 @@ font-size:36px;
 .btn:hover{
     background:#1565c0;
 }
+.card{
+background:#fff;
+padding:20px;
+margin:20px 0;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
