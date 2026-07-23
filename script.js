@@ -50,7 +50,7 @@ document.getElementById("time").value =
     minute: "2-digit"
   });
 // Dark Mode Toggle
-const btn = document.getElementById("theme-toggle");
+  const btn = document.getElementById("theme-btn");
 
 if (btn) {
   btn.onclick = function () {
