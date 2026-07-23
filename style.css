@@ -275,15 +275,21 @@ font-size:36px;
     background:#000;
 }
 
-.dark-mode .card,
-.dark-mode .project-card{
-    background:#1e1e1e;
-    color:#ffffff;
+.dark-mode .card{
+    background:#1f1f1f;
+    color:#fff;
 }
 
 .dark-mode a{
-    color:#4da3ff;
-        }
+    color:#fff;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p{
+    color:#fff;
+}
 .theme-btn{
     background:#2563eb;
     color:white;
@@ -298,6 +304,11 @@ font-size:36px;
 .dark-mode .theme-btn{
     background:#facc15;
     color:#000;
+}
+.theme-btn:hover{
+    background:#003b8e;
+    transform:scale(1.05);
+    transition:0.3s;
 }
 .social-links{
     margin-top: 20px;
