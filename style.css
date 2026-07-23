@@ -377,3 +377,27 @@ transition:0.3s;
 .card:hover{
 transform:translateY(-8px);
 }
+.theme-btn{
+    background:#0d47a1;
+    color:white;
+    border:none;
+    padding:8px 14px;
+    border-radius:6px;
+    cursor:pointer;
+    margin-left:15px;
+}
+
+.dark-mode{
+    background:#121212;
+    color:white;
+}
+
+.dark-mode section{
+    background:#121212;
+    color:white;
+}
+
+.dark-mode .card{
+    background:#1e1e1e;
+    color:white;
+}
