@@ -48,6 +48,7 @@ document.getElementById("time").value =
   now.toLocaleTimeString([], {
     hour: "2-digit",
     minute: "2-digit"
+  };
   });
 // Dark Mode Toggle
   const btn = document.getElementById("theme-btn");
