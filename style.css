@@ -412,3 +412,15 @@ transform:translateY(-8px);
     background:#1e1e1e;
     color:white;
 }
+footer{
+    background:#0047a1;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+footer p{
+    margin:0;
+    font-size:16px;
+    }
